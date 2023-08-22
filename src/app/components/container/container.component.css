@@ -1,0 +1,30 @@
+#container{
+  height: calc(100vh - 160px);
+  display: flex;
+  border: 0.1px solid black;
+}
+#main{
+  background-color: violet;
+  color: white;
+  font-weight: bold;
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aside{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  #container{
+    flex-direction: column-reverse;
+  }
+}
